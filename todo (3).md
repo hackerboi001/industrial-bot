@@ -9,7 +9,7 @@
 -   [ ]  Gather detailed specifications for Vacuum 40
 -   [ ]  Research AI and navigation technologies used
 -   [ ]  Research mechanical systems and components
--   [ ]  Research electronic systems and sensors
+-   [ Prudhvi ]  Research electronic systems and sensors
 -   [ ]  Research software architecture and programming
 
 ## Document Creation Phase
