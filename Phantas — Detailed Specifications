@@ -1,0 +1,99 @@
+# Phantas — Detailed Specifications
+
+## Overview
+
+Phantas is Gausium’s multifunctional autonomous cleaning robot designed for commercial indoor environments. It combines vacuuming, sweeping, scrubbing, and dust mopping into a single platform and is intended for offices, retail spaces, transportation hubs, and other mid-to-large indoor areas.
+
+---
+
+## 1. Physical Specifications
+
+* **Dimensions (L × W × H):** 540 × 440 × 617 mm (21.3 × 17.3 × 24.3 in)
+* **Net weight:** ~53 kg (117 lb)
+* **Minimum passable width:** ~520 mm (may vary with accessories/configuration)
+* **Maximum gradability:** 8°
+* **Chassis & materials:** Commercial-grade metal and reinforced polymer components (manufacturer specification)
+
+---
+
+## 2. Cleaning Performance
+
+* **Cleaning modes:** Vacuuming, Sweeping, Scrubbing, Dust Mopping (4-in-1)
+* **Working widths:**
+
+  * Vacuuming / Sweeping: 410 mm (16.2 in)
+  * Scrubbing / Dust Mopping: 330 mm (13 in)
+* **Theoretical maximum cleaning capacity:**
+
+  * Scrubbing/Dust Mopping: ~950 m²/h
+  * Vacuuming/Sweeping: ~1,180 m²/h
+* **Practical cleaning efficiency (typical operational):** 350–700 m²/h (site and settings dependent)
+* **Maximum cleaning speed:** ~1.8 mph (operational speed varies with safety constraints)
+* **Debris capacities:**
+
+  * Dust bag: ~2.1 US gallons (approx.)
+  * Trash bin (solid debris): ~0.2 US gallons (approx.)
+* **Brushes & pads:** Replaceable main roller brush, side brushes, mopping pads, and squeegee assemblies
+
+---
+
+## 3. Power & Runtime
+
+* **Battery type:** Rechargeable lithium-ion battery (manufacturer-specified cells)
+* **Battery runtime:** Mode-dependent; reported ranges from ~4 to 14 hours depending on operation mode, payload, and site profile
+* **Charging:** Fast-charge capability; approximate full-charge time ~2 hours (varies by charger and battery state)
+* **Battery safety features:** BMS (battery management system) with overcharge, over-discharge, and thermal protection
+
+---
+
+## 4. Tanks & Consumables
+
+* **Solution / water tank:** Region- and SKU-specific (consult vendor datasheet for exact volumes). Manufacturer materials often specify coverage area (ft²) rather than liters.
+* **Consumables:** Brushes, mopping pads, filters, squeegees, dust bags, and batteries. All are replaceable; recommended maintenance schedules provided in user manuals.
+
+---
+
+## 5. Navigation & Perception
+
+* **Primary navigation sensors:** DTOF LiDAR (custom), structured-light 3D cameras for depth perception, RGB cameras, ultrasonic sensors (configurable by SKU)
+* **Navigation architecture:** SLAM-based mapping and localization with AI-enhanced obstacle classification and dynamic re-localization
+* **Capabilities:** Sticker-free re-localization, mapping, multi-floor operation (with mapping tools), dynamic no-go zones, adaptive path planning
+* **Human-aware navigation:** Automatic speed reduction and path adjustments near people; floor-type recognition for cleaning parameter tuning
+
+---
+
+## 6. Connectivity & Software
+
+* **Connectivity:** Wi-Fi (primary), optional LAN; cellular options depend on region/partner integrations
+* **Fleet management:** Cloud-based platform for scheduling, remote monitoring, telemetry, and OTA updates
+* **User interfaces:** Mobile app and web console for manual control, reports, and task configuration
+* **Integration:** APIs and SDK availability vary by region; capable of integrating with third-party facility management and enterprise platforms through partnerships
+
+---
+
+## 7. Environmental & Safety
+
+* **Safety stack:** Multi-layer obstacle avoidance combining LiDAR, 3D cameras, and ultrasonic detection; emergency stop; soft bumpers
+* **Certifications:** Region-dependent safety and EMC certifications (check local datasheets for CE, FCC, CCC, etc.)
+* **Operating environments:** Hard floors and low-pile carpets; not intended for heavy outdoor use or very uneven terrain
+* **Noise levels:** Manufacturer-specified dB ratings vary by mode (consult datasheets for exact figures)
+
+---
+
+## 8. Variants & Accessories
+
+* **Variants:** Phantas base model; region- and partner-specific Pro variants (e.g., S1 Pro) with different battery or brush configurations
+* **Accessories:** Docking/charging stations, spare consumable kits, additional brush/mop modules, optional trays or mounts for service extensions (may be regionally provided by partners)
+
+---
+
+## 9. Maintenance & Service
+
+* **Recommended maintenance:** Regular consumable replacement (brushes, filters, pads), battery health checks, software updates via cloud platform
+* **Service model:** Manufacturer and authorized distributor service networks; remote diagnostics supported through cloud telemetry
+
+---
+
+## 10. Notes & Sources
+
+* The above specifications are consolidated from Gausium product pages, regional distributor datasheets, and user manuals. Exact values (battery Ah, tank liters, acoustic noise levels, SDK endpoints, and SKU-specific options) can vary by production batch and region. For procurement or technical integration, consult the official Phantas datasheet or contact Gausium/distributor for the precise SKU-specific spec sheet.
